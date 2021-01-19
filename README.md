@@ -14,7 +14,7 @@ or, if l = 1, the locations of the Queens as in this line (note that this might 
 In addition, your program will operate in two ways, either (if w = 0) using a normal board as in the above example, or if ```w = 1```, using a wrap-around board, where (for example) cells 8 and 5 are adjacent, and cells 15 and 3.
 The program should be called with four parameters, like this:
 
-    ``` ./findAQ N k l w```
+    ```./findAQ N k l w```
     
 • N is the size of a side of the board
 • k is the numer of pieces that every queen must attack
