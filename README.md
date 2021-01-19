@@ -4,6 +4,10 @@ A parallel implementation of a solution to the Aggressive Queens problem (AQ). T
 
 Aggressive Queens, are ones which are attacking other Queens. In AQ, you are given two parameters, N > 3 and k ≥ 0, and you are asked to place on an N × N board a maximum number of Queens such that each of them attacks exactly k other Queens. Note that when k = 0, the problem reduces to the standard N-Queens problem. Your program should find ALL maximum solutions.
 
+The program is built to be parallelizable and so does not uses recursion and may seem to be inefficient. This is to ensure that it can ensure a high degree of code parallelizability.
+
+The program is parallelized using MPI.
+
 # Notes
 
 Attack here means direct attack. For example, if two Queens A and B are on the same line with (inbetween) another Queen, then A and B do not attack each other.
